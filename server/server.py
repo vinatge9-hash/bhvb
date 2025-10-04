@@ -1,0 +1,1 @@
+from flask import Flask, send_from_directory\napp = Flask(__name__, static_folder='public', static_url_path='')\n\n@app.route('/')\ndef index():\n    return send_from_directory('public', 'index.html')\n\n@app.route('/<path:path>')\ndef static_proxy(path):\n    return send_from_directory('public', path)\n\nif __name__ == '__main__':\n    app.run(debug=True, port=5000)\n
