@@ -1,0 +1,13 @@
+{
+  "name": "brew-and-beans-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A complete 4-page coffee shop website built with Tailwind CSS.",
+  "scripts": {
+    "start": "python3 server/server.py",
+    "build": "echo \"Static site; no build step required for now.\""
+  },
+  "dependencies": {
+    "flask": "^2.3.2"
+  }
+}
